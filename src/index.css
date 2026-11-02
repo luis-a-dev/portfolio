@@ -45,6 +45,7 @@
   --size__md: 16rem;
   --size__lg: 24rem;
   --size__xl: 32rem;
+  --size__container: 75rem;
   --size__full: 100%;
 
   --radius: 0.5rem;
@@ -84,7 +85,7 @@ h3 {
   font-size: var(--font__subtitle);
 }
 
-label, button, small {
+label, button, .btn, small {
   font-size: var(--font__small);
 }
 
@@ -118,7 +119,7 @@ section[id]{
 }
 
 
-button {
+button, .btn {
   background-color: #1a1a1a;
   color: var(--text__light);
   display: flex;
@@ -133,7 +134,7 @@ button {
   height: 2.75rem;
 }
 
-button:hover {
+button:hover, .btn:hover {
   filter: contrast(85%);
 }
 
