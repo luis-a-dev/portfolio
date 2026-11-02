@@ -9,7 +9,7 @@ export const projects = [
   {
     id: 1,
     name: 'Labsol Academy',
-    description: 'Plataforma educativa en línea diseñada para personas que desean aprender nuevas habilidades a través de cursos impartidos por profesionales. Ofrece contenido estructurado, accesible y práctico, enfocado en facilitar el aprendizaje autónomo y de calidad.',
+    description: 'Plataforma educativa en línea con cursos impartidos por profesionales para aprender nuevas habilidades.',
     img: '/src/assets/img/IMG_9713.jpg',
     dev: [
       skillMap['Django'],
@@ -44,7 +44,7 @@ export const projects = [
   {
     id: 3,
     name: 'Alerta UAZ',
-    description: 'Aplicación móvil de emergencia que permite al usuario activar un botón de pánico en situaciones críticas. Al hacerlo, se envía su ubicación en tiempo real exclusivamente a los contactos de confianza previamente seleccionados, garantizando privacidad y respuesta rápida en caso de emergencia.',
+    description: 'App móvil de emergencia: un botón de pánico envía tu ubicación en tiempo real a tus contactos de confianza.',
     img: '/src/assets/img/IMG_9713.jpg',
     dev: [
       skillMap['Flutter'],
