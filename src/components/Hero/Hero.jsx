@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 
 import './Hero.css'
 import { useParallax } from '../../hooks/useParallax'
+import SocialLinks from '../SocialLinks/SocialLinks'
 
 function Hero() {
 
@@ -18,6 +19,9 @@ function Hero() {
       </figure>
       <h1>Luis Adrián</h1>
       <p>Ingeniero de software</p>
+      <div className='hero__links'>
+        <SocialLinks/>
+      </div>
     </section>
   )
 }

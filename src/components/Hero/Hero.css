@@ -55,3 +55,10 @@
     margin-bottom: var(--space__xl);
 }
 
+.hero__links {
+    /* Sin posición, el degradado de .hero::before se pinta encima de los íconos */
+    position: relative;
+    opacity: 0;
+    animation: to__top 1s ease forwards .2s;
+}
+
