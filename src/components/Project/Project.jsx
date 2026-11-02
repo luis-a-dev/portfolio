@@ -11,11 +11,11 @@ function Project() {
   const sectionRef = useRef()
   const containerRef = useRef()
   const isSectionVisible = useIntersectionObserver(sectionRef, {
-    threshold: 0.3
+    threshold: 0.1
   })
 
   const isContainerVisible = useIntersectionObserver(containerRef, {
-    threshold: 0.4
+    threshold: 0.1
   })
   
 
