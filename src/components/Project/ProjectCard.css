@@ -2,11 +2,13 @@
     border: 1px solid hsl(0, 0%, 15%);
     border-radius: var(--rounded__md);
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .project__card__img {
     width: var(--size__full);
-    height: var(--size__md);
+    aspect-ratio: 16 / 10;
     position: relative;
 }
 
@@ -26,39 +28,41 @@
 .project__card__info p {
     margin-top: var(--space__sm);
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
-.project__card__action {
-    display: flex;
-    flex-direction: row;
-    gap: var(--space__sm);
-    padding: var(--space__lg);
-}
-
 .project__card__icon {
-    width: var(--size__full);
-    height: 1.75rem;
-    position: relative;
+    display: flex;
+    padding-left: var(--space__lg);
+    padding-right: var(--space__lg);
+    padding-bottom: var(--space__lg);
+    margin-top: auto;
 }
 
-.project__card__icon img {
-    position: absolute;
+.project__card__icon li {
+    position: relative;
+    display: grid;
+    place-items: center;
     width: 1.75rem;
-    height: var(--size__full);
-    object-fit: contain;
+    height: 1.75rem;
     border-radius: var(--rounded__full);
-    inset: 0;
     box-shadow: 3px 0 4px #0b0b0b;
     border: 1px solid hsl(0, 0%, 14%);
     padding: 3px;
     background-color: var(--bg__dark);
+    line-height: 1;
 }
 
-.project__card__icon img:nth-last-child(1) {
+.project__card__icon li:last-child {
     box-shadow: none;
+}
+
+.project__card__icon img {
+    width: var(--size__full);
+    height: var(--size__full);
+    object-fit: contain;
 }
 
 

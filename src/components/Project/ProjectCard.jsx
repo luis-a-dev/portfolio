@@ -1,11 +1,13 @@
 import React from 'react'
 import './ProjectCard.css'
-import { rippleEffect } from '../../helpers/animations'
 
-import { FiGithub } from "react-icons/fi";
-import { BsBoxArrowUpRight } from "react-icons/bs";
+const MAX_VISIBLE_SKILLS = 5
 
 export default function ProjectCard({title, img, description, dev}) {
+  // Si no caben todas, el último lugar lo ocupa el contador "+N"
+  const visibleSkills = dev.length > MAX_VISIBLE_SKILLS ? dev.slice(0, MAX_VISIBLE_SKILLS - 1) : dev
+  const hiddenSkills = dev.slice(visibleSkills.length)
+
   return (
     <div className='project__card'>
         <div className='project__card__area'>
@@ -17,32 +19,22 @@ export default function ProjectCard({title, img, description, dev}) {
             <p>{description}</p>
           </div>
         </div>
-        <figure className='project__card__icon'>
+        <ul className='project__card__icon'>
           {
-            dev.map( (skill, index) => (
-              <img 
-                key={skill.id} 
-                src={skill.icon} 
-                alt={skill.name} 
-                aria-label={skill.name}
-                style={{
-                  left: `calc(var(--space__lg) + ${index * 1.75}rem)`,
-                  zIndex: -index,
-                }}
-              />
+            visibleSkills.map( (skill, index) => (
+              <li key={skill.id} style={{ zIndex: visibleSkills.length - index }}>
+                <img src={skill.icon} alt={skill.name} title={skill.name} />
+              </li>
             ))
           }
-        </figure>
-        <div className='project__card__action'>
-          <button className='btn ripple' onClick={(e) => rippleEffect(e)}>
-            <BsBoxArrowUpRight />
-            Demo
-          </button>
-          <button className='btn ripple' onClick={(e) => rippleEffect(e)}>
-            <FiGithub /> 
-            Code
-          </button>
-        </div>
+          {
+            hiddenSkills.length > 0 && (
+              <li title={hiddenSkills.map(skill => skill.name).join(', ')}>
+                <small>+{hiddenSkills.length}</small>
+              </li>
+            )
+          }
+        </ul>
     </div>
   )
 }
