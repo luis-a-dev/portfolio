@@ -18,8 +18,8 @@ function Portfolio() {
       <Header/>
       <main>
         <Hero/>
-        <About/>
         <Project/>
+        <About/>
         <Contact/>
       </main>
       <Footer/>

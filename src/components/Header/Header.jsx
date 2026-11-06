@@ -5,9 +5,9 @@ import { rippleEffect } from '../../helpers/animations'
 import useScrollPosition from '../../hooks/useScrollPosition'
 
 const navbarItems = [
-    {id: 'about', label: 'Acerca'}, 
-    {id: 'project', label: 'proyectos'}, 
-    {id: 'contact', label: 'contactar'}
+    {id: 'project', label: 'Proyectos'},
+    {id: 'about', label: 'Sobre mí'},
+    {id: 'contact', label: 'Contacto'}
 ]
 
 function Header() {
