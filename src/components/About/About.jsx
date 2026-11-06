@@ -21,7 +21,20 @@ function About() {
         </figure>
         <div className={`about__me ${isVisible ? 'fade__in' : ''}`}>
           <h3>Quién soy</h3>
-          <p>Soy de Zacatecas y me dedico al desarrollo de sistemas web y en  aplicaciones móviles. Mi objetivo es transformar ideas en realidad a través del código y expandir mis habilidades y conocimientos. Si tienes alguna idea, no dudes en contactarme.</p>
+          <p>
+            Soy desarrollador de software con enfoque en backend. 
+            Mi formación en ingeniería de software me enseñó a 
+            llevar un proyecto completo: analizo los requerimientos, 
+            diseño la arquitectura y el modelo de datos, elijo las 
+            herramientas adecuadas, implemento y pruebo. Construyo 
+            APIs, sistemas de autenticación, comunicación en tiempo 
+            real y bases de datos, y también desarrollo apps móviles. 
+            Busco oportunidades como desarrollador backend, ya sea en 
+            una empresa o como freelance.
+          </p>
+          <p className='about__availability'>
+            Disponible para trabajo remoto o presencial
+          </p>
           <button className='btn ripple' onClick={(e) => rippleEffect(e)}><IoDocumentTextOutline /> Descargar CV</button>
         </div>
       </div>

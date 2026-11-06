@@ -18,7 +18,7 @@ function Hero() {
         <img src="/src/assets/png/bg__forest.png" alt="" ref={forestParallaxRef}/>
       </figure>
       <h1>Luis Adrián</h1>
-      <p>Ingeniero de software</p>
+      <p>Desarrollador backend y móvil</p>
       <div className='hero__links'>
         <SocialLinks/>
       </div>

@@ -5,10 +5,6 @@
     align-items: center;
 }
 
-.about h2{
-    margin-bottom: var(--space__2xl);
-}
-
 .about h3 {
     margin-bottom: var(--space__md);
     margin-bottom: var(--space__xl);
@@ -49,7 +45,7 @@
 
 .about__img::before {
     position: absolute;
-    content: 'Hola';
+    /* content: 'Hola'; */
     bottom: 0;
     right: 0;
     width: auto;
@@ -57,6 +53,12 @@
     background-color: var(--bg__dark);
     padding: var(--space__md) var(--space__3xl);
     border-top-left-radius: var(--rounded__lg);
+}
+
+.about__availability {
+    font-size: var(--font__small);
+    color: var(--text__muted);
+    margin-bottom: var(--space__md);
 }
 
 .about__img.fade__in {
