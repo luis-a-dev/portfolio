@@ -9,6 +9,9 @@ dist-ssr/
 coverage/
 .vite/
 
+# Documentos personales (CV con datos de contacto)
+docs/
+
 # Configuración local y entorno
 .env
 .env.local
