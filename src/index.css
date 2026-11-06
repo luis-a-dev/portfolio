@@ -16,6 +16,7 @@
   --bg__light: aliceblue;
   --bg__dark: rgb(18, 18, 18); 
   --bg__muted: rgba(255, 255, 255, 0.1);
+  --border: hsl(0, 0%, 15%);
 
   --text__light: rgba(255, 255, 255, 0.87);
   --text__dark: rgb(0, 0, 0); 
@@ -116,6 +117,10 @@ section {
 
 section[id]{
   scroll-margin-top: 8vh;
+}
+
+section > h2 {
+  margin-bottom: var(--space__lg);
 }
 
 

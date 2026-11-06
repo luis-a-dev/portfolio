@@ -79,5 +79,20 @@ export const skills = [
         name: 'Bootstrap',
         icon: '/src/assets/icons/bootstrap.png'
     },
+    {
+        id: 17,
+        name: 'TypeScript',
+        icon: '/src/assets/icons/typescript.png'
+    },
+    {
+        id: 18,
+        name: 'PostgreSQL',
+        icon: '/src/assets/icons/postgresql.png'
+    },
+    {
+        id: 19,
+        name: 'Socket.IO',
+        icon: '/src/assets/icons/socketio.svg'
+    },
 
 ];

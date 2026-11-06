@@ -1,5 +1,5 @@
 .project__card {
-    border: 1px solid hsl(0, 0%, 15%);
+    border: 1px solid var(--border);
     border-radius: var(--rounded__md);
     overflow: hidden;
     display: flex;
@@ -23,6 +23,12 @@
 .project__card__info {
     padding: var(--space__lg);
 
+}
+
+.project__card__context {
+    display: block;
+    margin-top: var(--space__xs);
+    color: var(--text__muted);
 }
 
 .project__card__info p {

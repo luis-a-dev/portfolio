@@ -25,7 +25,7 @@ function Project() {
       <div className={`project__container ${isContainerVisible ? 'fade__in' : ''}` } ref={containerRef}>
         {
           projects.map( project => (
-            <ProjectCard key={project.id} title={project.name} description={project.description} img={project.img} dev={project.dev}/>
+            <ProjectCard key={project.id} title={project.name} context={project.context} description={project.description} img={project.img} dev={project.dev}/>
           ) )
         }
       </div>

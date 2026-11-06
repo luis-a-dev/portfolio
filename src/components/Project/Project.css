@@ -6,7 +6,6 @@
 
 .project h2 {
     opacity: 0;
-    margin-bottom: var(--space__lg);
 }
 
 .project h2.fade__in {
