@@ -27,4 +27,9 @@
     animation: to__top 1s ease-out forwards 0.1s;
 }
 
+.project__more {
+    margin-top: var(--space__xl);
+}
+
+
 

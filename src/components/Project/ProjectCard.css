@@ -71,4 +71,6 @@
     object-fit: contain;
 }
 
-
+.project__card.fade__in {
+    animation: to__top 0.6s ease-out both;
+}
