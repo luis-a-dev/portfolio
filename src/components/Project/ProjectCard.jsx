@@ -9,13 +9,13 @@ export default function ProjectCard({title, context, img, description, dev, reve
   const hiddenSkills = dev.slice(visibleSkills.length)
 
   return (
-    <div 
+    <article
       className={`project__card ${revealDelay !== undefined ? 'fade__in' : ''}`}
       style={revealDelay !== undefined ? {animationDelay: `${revealDelay}s`} : undefined}
     >
         <div className='project__card__area'>
           <figure className='project__card__img'>
-            <img src={img} alt={title} />
+            <img src={img} alt={title} loading='lazy' />
           </figure>
           <div className="project__card__info">
             <h3>{title}</h3>
@@ -39,6 +39,6 @@ export default function ProjectCard({title, context, img, description, dev, reve
             )
           }
         </ul>
-    </div>
+    </article>
   )
 }
