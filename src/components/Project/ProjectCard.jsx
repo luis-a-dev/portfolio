@@ -3,7 +3,7 @@ import './ProjectCard.css'
 
 const MAX_VISIBLE_SKILLS = 5
 
-export default function ProjectCard({title, context, img, description, dev, revealDelay}) {
+export default function ProjectCard({title, context, img, imgAlt, description, dev, revealDelay}) {
   // Si no caben todas, el último lugar lo ocupa el contador "+N"
   const visibleSkills = dev.length > MAX_VISIBLE_SKILLS ? dev.slice(0, MAX_VISIBLE_SKILLS - 1) : dev
   const hiddenSkills = dev.slice(visibleSkills.length)
@@ -15,7 +15,7 @@ export default function ProjectCard({title, context, img, description, dev, reve
     >
         <div className='project__card__area'>
           <figure className='project__card__img'>
-            <img src={img} alt={title} loading='lazy' />
+            <img src={img} alt={imgAlt} loading='lazy' />
           </figure>
           <div className="project__card__info">
             <h3>{title}</h3>

@@ -45,7 +45,8 @@ function Project() {
                 title={project.name} 
                 context={project.context} 
                 description={project.description} 
-                img={project.img} 
+                img={project.img}
+                imgAlt={project.imgAlt}
                 dev={project.dev}
                 revealDelay={index >= limit ? (index - limit) * 0.08 : undefined}
               />
