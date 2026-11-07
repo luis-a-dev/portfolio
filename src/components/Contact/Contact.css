@@ -82,6 +82,15 @@
     resize: vertical;
 }
 
+.contact__trap {
+    display: none;
+}
+
+.contact__form button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
 /* Datos de contacto */
 .contact__info {
     display: flex;
