@@ -3,6 +3,8 @@ import React, { useRef } from 'react'
 import './Hero.css'
 import { useParallax } from '../../hooks/useParallax'
 import SocialLinks from '../SocialLinks/SocialLinks'
+import moon from '../../assets/hero/bg__moon.webp'
+import forest from '../../assets/hero/bg__forest.webp'
 
 function Hero() {
 
@@ -14,8 +16,8 @@ function Hero() {
   return (
     <section className='hero'>
       <figure>
-        <img src="/src/assets/png/bg__moon.png" alt="" ref={moonParallaxRef} />
-        <img src="/src/assets/png/bg__forest.png" alt="" ref={forestParallaxRef}/>
+        <img src={moon} alt="" ref={moonParallaxRef} />
+        <img src={forest} alt="" ref={forestParallaxRef}/>
       </figure>
       <h1>Luis Adrián</h1>
       <p>Desarrollador backend y móvil</p>

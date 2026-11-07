@@ -1,4 +1,5 @@
 import { skills } from "./skills";
+import placeholder from "../assets/projects/placeholder.jpg";
 
 export const skillMap = skills.reduce((map, skill) => {
     map[skill.name] = skill;
@@ -11,7 +12,7 @@ export const projects = [
     name: 'Alerta SOS',
     context: 'Tesis · 2024–presente',
     description: 'App Android que alerta a tus contactos de confianza al agitar el teléfono y comparte tu ubicación en vivo.',
-    img: '/src/assets/img/IMG_9713.jpg',
+    img: placeholder,
     dev: [
       skillMap['Flutter'],
       skillMap['TypeScript'],
@@ -29,7 +30,7 @@ export const projects = [
     name: 'Labsol Academy',
     context: 'Servicio social · 2023 · Equipo de 4',
     description: 'Módulo de cursos de una plataforma educativa: cursos del usuario, reproducción de contenido y comentarios.',
-    img: '/src/assets/img/IMG_9713.jpg',
+    img: placeholder,
     dev: [
       skillMap['Django'],
       skillMap['Python'],
@@ -45,7 +46,7 @@ export const projects = [
     name: 'Transmisión de video y datos',
     context: 'Proyecto escolar · 2022 · Equipo de 2',
     description: 'Aplicación en Java que transmite video y datos entre dos computadoras mediante sockets TCP.',
-    img: '/src/assets/img/IMG_9713.jpg',
+    img: placeholder,
     dev: [
       skillMap['Java'],
     ],
@@ -58,7 +59,7 @@ export const projects = [
     id: 4,
     name: 'CACEI',
     description: 'Desarrollo web con Django, lenguaje Python, base de datos MySQL, entorno de desarrollo Docker, control de versión GitHub, estilos CSS y Bootstrap, lenguaje de marcado HTML, Cloudflare y AWS.',
-    img: '/src/assets/img/IMG_9713.jpg',
+    img: placeholder,
     dev: [
       skillMap['Django'],
       skillMap['Python'],
