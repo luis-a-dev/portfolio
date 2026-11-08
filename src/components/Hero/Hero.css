@@ -1,6 +1,5 @@
 .hero {
     position: relative;
-    justify-content: center;
     overflow: hidden;
     min-height: 100svh;
 }
@@ -40,12 +39,14 @@
 
 
 .hero h1 {
+    position: relative;
     opacity: 0;
     animation: to__top 1s ease forwards;
     margin-bottom: var(--space__md);
 }
 
 .hero p {
+    position: relative;
     opacity: 0;
     animation: to__top 1s ease forwards .1s;
     font-size: var(--font__lead);
