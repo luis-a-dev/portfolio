@@ -10,8 +10,6 @@
 }
 
 :root{
-  --primary: #a5f36a;
-
   --bg__dark: rgb(18, 18, 18);
   --bg__muted: rgba(255, 255, 255, 0.1);
   --bg__surface: #1a1a1a;
@@ -156,6 +154,14 @@ button:hover, .btn:hover {
   border-radius: var(--rounded__full);
   width: 3rem;
   height: 3rem;
+}
+
+.reveal {
+  opacity: 0;
+}
+
+.reveal.fade__in {
+  animation: to__top 1s ease-out forwards;
 }
 
 @keyframes to__top {

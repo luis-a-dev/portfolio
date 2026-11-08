@@ -1,21 +1,7 @@
-.project h2 {
-    opacity: 0;
-}
-
-.project h2.fade__in {
-    animation: to__top 1s ease-out forwards;
-}
-
 .project__container {
-    opacity: 0;
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
     gap: var(--space__lg);
-}
-
-.project__container.fade__in {
-    animation: to__top 1s ease-out forwards 0.1s;
 }
 
 .project__more {

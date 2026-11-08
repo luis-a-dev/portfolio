@@ -13,17 +13,12 @@
     place-items: center;
 }
 
-.about__img, .about__me {
-    opacity: 0;
-}
-
 .about__img {
     width: var(--size__full);
     height: var(--size__full);
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 
 .about__img img {
@@ -40,11 +35,11 @@
 }
 
 .about__img.fade__in {
-    animation: to__right 1s ease-out forwards;
+    animation-name: to__right;
 }
 
 .about__me.fade__in {
-    animation: to__left 1s ease-out forwards;
+    animation-name: to__left;
 }
 
 @media(max-width: 768px) {   

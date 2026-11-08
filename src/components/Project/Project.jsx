@@ -35,8 +35,13 @@ function Project() {
 
   return (
     <section id="project" className='project' ref={sectionRef}>
-      <h2 className={ isSectionVisible ? 'fade__in' : '' } >Mis proyectos</h2>
-      <div id='project-list' className={`container project__container ${isContainerVisible ? 'fade__in' : ''}` } ref={containerRef}>
+      <h2 className={`reveal ${isSectionVisible ? 'fade__in' : ''}`}>Mis proyectos</h2>
+      <div
+        id='project-list'
+        className={`container project__container reveal ${isContainerVisible ? 'fade__in' : ''}`}
+        style={{ animationDelay: '0.1s' }}
+        ref={containerRef}
+      >
         {
           visibleProjects.map(
             (project, index) => (

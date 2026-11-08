@@ -1,21 +1,3 @@
-.contact h2,
-.contact > .lead,
-.contact__me {
-    opacity: 0;
-}
-
-.contact h2.fade__in {
-    animation: to__top 1s ease-out forwards;
-}
-
-.contact > .lead.fade__in {
-    animation: to__top 1s ease-out forwards 0.1s;
-}
-
-.contact__me.fade__in {
-    animation: to__top 1s ease-out forwards 0.2s;
-}
-
 .contact > .lead {
     margin-bottom: var(--space__xl);
 }

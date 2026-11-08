@@ -61,9 +61,9 @@ function Contact() {
 
   return (
     <section id='contact' className='contact' ref={sectionRef}>
-      <h2 className={isSectionVisible ? 'fade__in' : ''}>Contacto</h2>
-      <p className={`lead ${isSectionVisible ? 'fade__in' : ''}`}>Si quieres saber más sobre mi trabajo, escríbeme.</p>
-      <div className={`container contact__me ${isContentVisible ? 'fade__in' : ''}`} ref={contentRef}>
+      <h2 className={`reveal ${isSectionVisible ? 'fade__in' : ''}`}>Contacto</h2>
+      <p className={`lead reveal ${isSectionVisible ? 'fade__in' : ''}`} style={{ animationDelay: '0.1s' }}>Si quieres saber más sobre mi trabajo, escríbeme.</p>
+      <div className={`container contact__me reveal ${isContentVisible ? 'fade__in' : ''}`} style={{ animationDelay: '0.2s' }} ref={contentRef}>
         <form className='contact__form contact__card' onSubmit={handleSubmit}>
             <input type='hidden' name='_subject' value='Nuevo mensaje desde el portafolio' />
             <div className="contact__row">

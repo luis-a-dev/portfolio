@@ -8,18 +8,23 @@ import { IoDocumentTextOutline } from "react-icons/io5";
 function About() {
 
 
-  const ref = useRef()
-  const isVisible = useIntersectionObserver(ref, {
-    threshold: 0.5
+  const sectionRef = useRef()
+  const contentRef = useRef()
+  const isSectionVisible = useIntersectionObserver(sectionRef, {
+    threshold: 0.1
+  })
+
+  const isContentVisible = useIntersectionObserver(contentRef, {
+    threshold: 0.1
   })
   return (
-    <section id='about' className='about' ref={ref}>
-      <h2>Acerca de mí</h2>
-      <div className='container about__container'>
-        <figure className={`about__img ${isVisible ? 'fade__in' : ''}`}>
+    <section id='about' className='about' ref={sectionRef}>
+      <h2 className={`reveal ${isSectionVisible ? 'fade__in' : ''}`}>Acerca de mí</h2>
+      <div className='container about__container' ref={contentRef}>
+        <figure className={`about__img reveal ${isContentVisible ? 'fade__in' : ''}`}>
           <img alt="Foto de Luis Adrián" />
         </figure>
-        <div className={`about__me ${isVisible ? 'fade__in' : ''}`}>
+        <div className={`about__me reveal ${isContentVisible ? 'fade__in' : ''}`}>
           <h3>Quién soy</h3>
           <p>
             Soy desarrollador de software con enfoque en backend. 
