@@ -2,7 +2,13 @@
     background-color: #0c0c0c;
     height: var(--size__md);
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    padding: 0 var(--space__xl);
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 

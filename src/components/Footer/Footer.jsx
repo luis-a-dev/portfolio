@@ -5,8 +5,10 @@ import SocialLinks from '../SocialLinks/SocialLinks'
 function Footer() {
   return (
     <footer className='footer'>
-      <small>© 2025 Luis Adrián</small>
-      <SocialLinks/>
+      <div className='container footer__content'>
+        <small>© 2025 Luis Adrián</small>
+        <SocialLinks/>
+      </div>
     </footer>
   )
 }
