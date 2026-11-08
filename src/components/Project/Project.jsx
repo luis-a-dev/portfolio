@@ -36,7 +36,7 @@ function Project() {
   return (
     <section id="project" className='project' ref={sectionRef}>
       <h2 className={ isSectionVisible ? 'fade__in' : '' } >Mis proyectos</h2>
-      <div id='project-list' className={`project__container ${isContainerVisible ? 'fade__in' : ''}` } ref={containerRef}>
+      <div id='project-list' className={`container project__container ${isContainerVisible ? 'fade__in' : ''}` } ref={containerRef}>
         {
           visibleProjects.map(
             (project, index) => (

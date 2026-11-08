@@ -1,9 +1,6 @@
 .hero {
     position: relative;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     overflow: hidden;
     min-height: 100svh;
 }

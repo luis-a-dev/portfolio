@@ -1,9 +1,3 @@
-.contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .contact h2,
 .contact > .lead,
 .contact__me {
@@ -28,8 +22,6 @@
 
 .contact__me {
     display: grid;
-    width: var(--size__full);
-    max-width: var(--size__container);
     grid-template-columns: minmax(0, 5fr) minmax(0, 3fr);
     gap: var(--space__xl);
 }
@@ -38,7 +30,7 @@
     border: 1px solid var(--border);
     padding: var(--space__lg);
     border-radius: var(--rounded__sm);
-    box-shadow: 0 4px 8px #0b0b0b;
+    box-shadow: var(--shadow);
 }
 
 /* Formulario */

@@ -48,7 +48,7 @@
     height: 1.75rem;
     border-radius: var(--rounded__full);
     box-shadow: 3px 0 4px #0b0b0b;
-    border: 1px solid hsl(0, 0%, 14%);
+    border: 1px solid var(--border);
     padding: 3px;
     background-color: var(--bg__dark);
     line-height: 1;

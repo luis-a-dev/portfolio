@@ -15,7 +15,7 @@ function About() {
   return (
     <section id='about' className='about' ref={ref}>
       <h2>Acerca de mí</h2>
-      <div className='about__container'>
+      <div className='container about__container'>
         <figure className={`about__img ${isVisible ? 'fade__in' : ''}`}>
           <img alt="Foto de Luis Adrián" />
         </figure>

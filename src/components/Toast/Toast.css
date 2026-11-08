@@ -9,10 +9,10 @@
     align-items: center;
     gap: var(--space__sm);
     padding: var(--space__sm) var(--space__md);
-    background-color: #1a1a1a;
+    background-color: var(--bg__surface);
     border: 1px solid var(--border);
     border-radius: var(--rounded__sm);
-    box-shadow: 0 4px 8px #0b0b0b;
+    box-shadow: var(--shadow);
 
     opacity: 0;
     visibility: hidden;

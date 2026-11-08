@@ -14,7 +14,7 @@
 }
 
 .navbar.visible {
-    background-color: hsla(0, 0%, 5%, 0.95);
+    background-color: var(--bg__navbar);
     height: 8vh;
 }
 
@@ -108,7 +108,7 @@
     }
 
     .navbar.active {
-        background-color: hsla(0, 0%, 5%, 0.95);
+        background-color: var(--bg__navbar);
     }
 
     .navbar__menu {
@@ -130,7 +130,7 @@
     }
 
     .navbar__list.active {
-        background-color: hsla(0, 0%, 5%, 0.95);
+        background-color: var(--bg__navbar);
     }
 
     .navbar__list li {
@@ -139,7 +139,7 @@
     }
 
     .navbar__list.visible {
-        background-color: hsla(0, 0%, 5%, 0.95);
+        background-color: var(--bg__navbar);
         margin-top: 8vh;
         height: 92vh;
     }
