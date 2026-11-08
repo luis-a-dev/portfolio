@@ -1,12 +1,10 @@
 .about {
-    font-family: var(--family__geist);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .about h3 {
-    margin-bottom: var(--space__md);
     margin-bottom: var(--space__xl);
 }
 
@@ -17,7 +15,7 @@
 .about__container {
     display: grid;
     width: var(--size__full);
-    height: var(--size__full);
+    max-width: var(--size__container);
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: var(--space__3xl);
     place-items: center;
@@ -41,18 +39,6 @@
     height: var(--size__full);
     object-fit: cover;
     border-radius: var(--rounded__lg);
-}
-
-.about__img::before {
-    position: absolute;
-    /* content: 'Hola'; */
-    bottom: 0;
-    right: 0;
-    width: auto;
-    height: auto;
-    background-color: var(--bg__dark);
-    padding: var(--space__md) var(--space__3xl);
-    border-top-left-radius: var(--rounded__lg);
 }
 
 .about__availability {
