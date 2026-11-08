@@ -37,7 +37,7 @@ function BackTop() {
   }
 
   return (
-    <button className={`rounded scroll__to__top ${isVisible ? 'visible' : 'hidden'}`} onClick={scrollToTop}>
+    <button className={`rounded scroll__to__top ${isVisible ? 'visible' : ''}`} onClick={scrollToTop}>
       <FaArrowUp />
     </button>
   )
