@@ -19,7 +19,7 @@
         rgba(0, 0, 0, 0.2) 30%,
         rgba(0, 0, 0, 0.4) 60%,
         var(--bg__dark) 100%
-    );;
+    );
     pointer-events: none;
 }
 

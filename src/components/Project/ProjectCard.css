@@ -6,17 +6,10 @@
     flex-direction: column;
 }
 
-.project__card__img {
+.project__card__img img{
+    display: block;
     width: var(--size__full);
     aspect-ratio: 16 / 10;
-    position: relative;
-}
-
-.project__card__img img{
-    position: absolute;
-    width: var(--size__full);
-    height: var(--size__full);
-    inset: 0px;
     object-fit: cover;
 }
 

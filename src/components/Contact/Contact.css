@@ -101,7 +101,6 @@
 
 .contact__item {
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: var(--space__md);
 }

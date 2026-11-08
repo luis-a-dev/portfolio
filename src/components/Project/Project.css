@@ -16,7 +16,6 @@
     opacity: 0;
     width: var(--size__full);
     max-width: var(--size__container);
-    height: auto;
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));

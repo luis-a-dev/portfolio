@@ -61,7 +61,7 @@ function Header() {
                 <span/>
             </button>
             <nav className={`navbar__menu ${menuOpen ? 'active':''}`}>
-                <ul ref={navbarList} className={`navbar__list fade__in ${isVisible ? 'visible':''} ${menuOpen ? 'active':''}`}>
+                <ul ref={navbarList} className={`navbar__list ${isVisible ? 'visible':''} ${menuOpen ? 'active':''}`}>
                     { navbarItems.map(item => (
                     <li key={item.id}>
                         <a

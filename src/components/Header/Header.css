@@ -84,10 +84,9 @@
 .navbar__menu__btn span{
     background-color: #fff;
     border-radius: var(--rounded__md);
-    transition: 0.3s cubic-bezier(.8, .5, .2, 1.4);
+    transition: 0.5s cubic-bezier(.8, .5, .2, 1.4);
     width: 50%;
     height: 3px;
-    transition-duration: 500ms;
     transform: translateY(-1px);
 }
 
@@ -126,7 +125,6 @@
         width: 35vw;
         height: 88vh;
         flex-direction: column;
-        /* background-color: transparent; */
         margin-top: 12vh;
         transition: all 0.5s ease;
     }

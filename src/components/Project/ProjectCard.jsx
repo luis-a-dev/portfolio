@@ -13,15 +13,13 @@ export default function ProjectCard({title, context, img, imgAlt, description, d
       className={`project__card ${revealDelay !== undefined ? 'fade__in' : ''}`}
       style={revealDelay !== undefined ? {animationDelay: `${revealDelay}s`} : undefined}
     >
-        <div className='project__card__area'>
-          <figure className='project__card__img'>
-            <img src={img} alt={imgAlt} loading='lazy' />
-          </figure>
-          <div className="project__card__info">
-            <h3>{title}</h3>
-            <small className='project__card__context'>{context}</small>
-            <p>{description}</p>
-          </div>
+        <figure className='project__card__img'>
+          <img src={img} alt={imgAlt} loading='lazy' />
+        </figure>
+        <div className="project__card__info">
+          <h3>{title}</h3>
+          <small className='project__card__context'>{context}</small>
+          <p>{description}</p>
         </div>
         <ul className='project__card__icon'>
           {
