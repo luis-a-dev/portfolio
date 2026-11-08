@@ -23,12 +23,12 @@
   --family__primary: "Geist", sans-serif;
 
   /* Tipografía fluida: crece del tamaño en móvil (360px) al de escritorio (1440px) */
-  --font__display: clamp(2.25rem, 1.8333rem + 1.8519vw, 3.5rem);      /* 36 → 56 */
-  --font__title: clamp(1.75rem, 1.5rem + 1.1111vw, 2.5rem);           /* 28 → 40 */
-  --font__subtitle: clamp(1.25rem, 1.1667rem + 0.3704vw, 1.5rem);     /* 20 → 24 */
-  --font__lead: clamp(1.125rem, 1.0833rem + 0.1852vw, 1.25rem);       /* 18 → 20 */
-  --font__body: clamp(1rem, 0.9792rem + 0.0926vw, 1.0625rem);         /* 16 → 17 */
-  --font__small: clamp(0.875rem, 0.8542rem + 0.0926vw, 0.9375rem);    /* 14 → 15 */
+  --font__display: clamp(2rem, 1.6667rem + 1.4815vw, 3rem);           /* 32 → 48 */
+  --font__title: clamp(1.5rem, 1.3333rem + 0.7407vw, 2rem);           /* 24 → 32 */
+  --font__subtitle: clamp(1.125rem, 1.0833rem + 0.1852vw, 1.25rem);   /* 18 → 20 */
+  --font__lead: clamp(1rem, 0.9583rem + 0.1852vw, 1.125rem);          /* 16 → 18 */
+  --font__body: 1rem;                                                 /* 16 */
+  --font__small: 0.875rem;                                            /* 14 */
 
   --space__xs: 0.25rem;
   --space__sm: 0.5rem;
@@ -37,7 +37,7 @@
   --space__xl: 2rem;
   --space__2xl: 3rem;
   --space__3xl: 4rem;
-  --space__section: clamp(4rem, 3.3333rem + 2.963vw, 6rem);
+  --space__section: 4rem;
 
   --size__xs: 4rem;
   --size__md: 16rem;
@@ -58,6 +58,12 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+@media (min-width: 1025px) {
+  html {
+    font-size: 90%;
+  }
 }
 
 body {
@@ -104,14 +110,16 @@ a {
 
 section {
   width: var(--size__full);
+  min-height: calc(100svh - 8vh);
   padding: var(--space__section) var(--space__xl);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 section[id]{
-  scroll-margin-top: calc(8vh + var(--space__2xl) - var(--space__section));
+  scroll-margin-top: 8vh;
 }
 
 section > h2 {

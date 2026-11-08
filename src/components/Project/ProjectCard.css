@@ -26,6 +26,7 @@
 
 .project__card__info p {
     margin-top: var(--space__sm);
+    font-size: var(--font__small);
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
