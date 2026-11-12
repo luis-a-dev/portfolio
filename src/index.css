@@ -20,7 +20,7 @@
   --text__light: rgba(255, 255, 255, 0.87);
   --text__muted: rgb(161, 161, 170);
 
-  --family__primary: "Geist", sans-serif;
+  --family__primary: "Geist Variable", sans-serif;
 
   /* Tipografía fluida: crece del tamaño en móvil (360px) al de escritorio (1440px) */
   --font__display: clamp(2rem, 1.6667rem + 1.4815vw, 3rem);           /* 32 → 48 */
