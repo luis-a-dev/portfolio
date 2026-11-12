@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className='footer'>
       <div className='container footer__content'>
-        <small>© 2025 Luis Adrián</small>
+        <small>© {new Date().getFullYear()} Luis Adrián</small>
         <SocialLinks/>
       </div>
     </footer>
