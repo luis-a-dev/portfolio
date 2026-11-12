@@ -55,6 +55,8 @@ function Header() {
             <button 
                 className={`rounded navbar__menu__btn ripple ${menuOpen ? 'active':''}`} 
                 onClick={(e) => {rippleEffect(e); toggleMenu();}}
+                aria-label='Menú de navegación'
+                aria-expanded={menuOpen}
             >
                 <span/>
                 <span/>
