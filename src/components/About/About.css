@@ -15,7 +15,8 @@
 
 .about__img {
     width: var(--size__full);
-    height: var(--size__full);
+    max-width: min(24rem, 50vh);
+    aspect-ratio: 1 / 1;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -34,12 +35,8 @@
     margin-bottom: var(--space__md);
 }
 
-.about__img.fade__in {
-    animation-name: to__right;
-}
-
-.about__me.fade__in {
-    animation-name: to__left;
+.about__me .btn {
+    width: fit-content;
 }
 
 @media(max-width: 768px) {   

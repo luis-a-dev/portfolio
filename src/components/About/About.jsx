@@ -2,6 +2,8 @@ import React, { useRef } from 'react'
 import './About.css'
 import useIntersectionObserver from '../../hooks/useIntersectionObserver'
 import { rippleEffect } from '../../helpers/animations'
+import photo from '../../assets/about/foto.webp'
+import cv from '../../assets/pdf/CV-Luis-Adrian-Hernandez-ES.pdf'
 
 import { IoDocumentTextOutline } from "react-icons/io5";
 
@@ -22,9 +24,9 @@ function About() {
       <h2 className={`reveal ${isSectionVisible ? 'fade__in' : ''}`}>Acerca de mí</h2>
       <div className='container about__container' ref={contentRef}>
         <figure className={`about__img reveal ${isContentVisible ? 'fade__in' : ''}`}>
-          <img alt="Foto de Luis Adrián" />
+          <img src={photo} alt="Foto de Luis Adrián" loading='lazy' />
         </figure>
-        <div className={`about__me reveal ${isContentVisible ? 'fade__in' : ''}`}>
+        <div className={`about__me reveal ${isContentVisible ? 'fade__in' : ''}`} style={{ animationDelay: '0.1s' }}>
           <h3>Quién soy</h3>
           <p>
             Soy desarrollador de software con enfoque en backend. 
@@ -40,7 +42,7 @@ function About() {
           <p className='about__availability'>
             Disponible para trabajo remoto o presencial
           </p>
-          <button className='btn ripple' onClick={(e) => rippleEffect(e)}><IoDocumentTextOutline /> Descargar CV</button>
+          <a className='btn ripple' href={cv} download='CV-Luis-Adrian-Hernandez.pdf' onClick={(e) => rippleEffect(e)}><IoDocumentTextOutline /> Descargar CV</a>
         </div>
       </div>
     </section>
