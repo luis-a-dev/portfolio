@@ -183,6 +183,15 @@ button:hover, .btn:hover {
   }
 }
 
+@keyframes slide__to__top {
+  from{
+    transform: translateY(50px);
+  }
+  to{
+    transform: translateY(0);
+  }
+}
+
 @keyframes to__right {
   from{
     transform: translateX(-50px);
