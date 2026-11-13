@@ -48,8 +48,8 @@ export const projects = [
   {
     id: 3,
     name: 'Transmisión de video y datos',
-    context: 'Proyecto escolar · 2022 · Equipo de 2',
-    description: 'Aplicación en Java que transmite video y datos entre dos computadoras mediante sockets TCP.',
+    context: 'Proyecto escolar · 2023 · Equipo de 2',
+    description: 'Aplicación en Java para chatear, enviar archivos y hacer videollamadas entre dos computadoras mediante sockets TCP y UDP.',
     img: datos_video,
     imgAlt: 'Ilustración de una videollamada entre varias personas',
     dev: [

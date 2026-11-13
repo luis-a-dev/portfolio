@@ -3,7 +3,7 @@ import './About.css'
 import useIntersectionObserver from '../../hooks/useIntersectionObserver'
 import { rippleEffect } from '../../helpers/animations'
 import photo from '../../assets/about/foto.webp'
-import cv from '../../assets/pdf/CV-Luis-Adrian-Hernandez-ES.pdf'
+import cv from '../../assets/pdf/CV_Luis_Adrian_Hernandez_Cordero_ES.pdf'
 
 import { IoDocumentTextOutline } from "react-icons/io5";
 
@@ -42,7 +42,7 @@ function About() {
           <p className='about__availability'>
             Disponible para trabajo remoto o presencial
           </p>
-          <a className='btn ripple' href={cv} download='CV-Luis-Adrian-Hernandez.pdf' onClick={(e) => rippleEffect(e)}><IoDocumentTextOutline /> Descargar CV</a>
+          <a className='btn ripple' href={cv} download='CV_Luis_Adrian_Hernandez_Cordero.pdf' onClick={(e) => rippleEffect(e)}><IoDocumentTextOutline /> Descargar CV</a>
         </div>
       </div>
     </section>
